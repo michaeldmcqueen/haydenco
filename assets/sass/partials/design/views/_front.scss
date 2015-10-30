@@ -1,0 +1,116 @@
+.postscript {
+  @include clearfix;
+  padding-top: 2em;
+}
+//About Block
+.about-us-front{
+  padding: 2em 2em 8em;
+  position: relative;
+  margin: 0 -1em;
+  overflow: hidden;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    padding: 2em;
+    margin: 0;
+    overflow: visible;
+  }
+  &:before {
+      content: '';
+      @include grad(rgba(255,255,255,1), rgba(255,255,255,0.5),90%);
+      width: 110%;
+      height: 350px;
+      position: absolute;
+      left: -2em;
+      top: 0;
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      background: url('../images/about-post.jpg') no-repeat center center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 110%;
+      height: 450px;
+      position: absolute;
+      left: -2em;
+      top: 0;
+      z-index: -2;
+    }
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    height: 450px;
+    padding: 2em 2em 2em 0;
+    @include grid-span(6,1);
+    &:before {
+      content: '';
+       @include grad(rgba(255,255,255,0.95), rgba(255,255,255,0),90%);
+      width: 200%;
+      height: 450px;
+      position: absolute;
+      left: -50%;
+      top: 0;
+      z-index: -1;
+    }
+    &:after {
+      content: '';
+      background: url('../images/about-post.jpg') no-repeat center center; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      width: 200%;
+      height: 450px;
+      position: absolute;
+      left: -50%;
+      top: 0;
+      z-index: -2;
+    }
+  }
+}
+
+// Procedure Block
+#block-views-our-procedures-block-1 {
+  padding: 1em;
+  position: relative;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    height: 450px;
+    padding: 2em 2em;
+    @include grid-span(6,7);
+    &:after {
+      content: '';
+      background: #fff;
+      width: 200%;
+      height: 450px;
+      position: absolute;
+      right: -100%;
+      top: 0;
+      z-index: -1;
+    }
+  }
+  .views-row {
+    padding: .5em 0;
+    border-top: 1px solid #979797;
+    @include breakpoint($lg-desktop, $no-query: '.no-mq') {
+      float: left;
+      width: 50%;
+    }
+    h6 {
+      margin: 0;
+      font-weight: normal;
+      color: inherit;
+      a {
+        overflow: hidden;
+        display: block;
+        color: inherit;
+      }
+      &:before {
+        content: '';
+        background: url('../images/triangle.png') no-repeat;
+        width: 7px;
+        height: 7px;
+        float: left;
+        margin: 4px 1em 0 1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.view-team {
+  @include clearfix;
+  .views-row {
+    padding: 2em 0;
+  }
+  .ds-one {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: left;
+      width: 20%;
+      margin-right: 2em;
+    }
+  }
+  .ds-two {
+    overflow: hidden;
+    h2 {
+      margin: 0;
+    }
+    h6 {
+      margin: .5em 0;
+    }
+    .contact-email {
+      margin-bottom: 1em;
+    }
+  }
+}

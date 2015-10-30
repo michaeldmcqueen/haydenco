@@ -1,0 +1,26 @@
+header.site-header {
+  @include clearfix;
+  padding: .5em 0 .5em;
+  background: $nav-bg;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    padding: 0;
+  }
+  .wrap {
+    max-width: 900px;
+  }
+}
+
+.logo {
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    max-width: 300px;
+    width: auto;
+    margin:-6em auto -2.5em;
+  }
+}
+nav.main-navigation {
+  @include clearfix;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    margin: 0em 0 0;
+    padding: 1.5em 0 2.5em;
+  }
+}

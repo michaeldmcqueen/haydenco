@@ -1,0 +1,58 @@
+.preface {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 1em;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    height:500px;
+    margin-bottom: 3em;
+  }
+  &:after {
+    content: '';
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,0.85+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.85))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* W3C */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height:300px;
+    bottom: 0;
+    z-index: -1;
+  }
+  .preface-text {
+    text-align: center;
+    margin-top: 200px;
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      margin-top:300px;
+    }
+    * {
+      color: #fff;
+    }
+    h1 {
+      @include heading-text;
+      font-size: 2.75em;
+      &:after {
+        @include border-bottom;
+      }
+    }
+    h3 {
+      font-size: 2.75em;
+      @include heading-text;
+      &:after {
+        @include border-bottom;
+      }
+    }
+    h5 {
+      text-transform: uppercase;
+      font-size: 1.1em;
+    }
+  }
+}
+
+.front .preface {
+  height: 550px;
+}

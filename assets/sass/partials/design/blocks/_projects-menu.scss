@@ -1,0 +1,33 @@
+#block-menu-menu-projects {
+  h2 {
+    font-size: 100%;
+    margin: 0;
+    background: $color-one;
+    color: #fff;
+    padding: .75em 1em .75em 2em;
+    @include heading-text;
+    display: block;
+  }
+  ul,li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  li {
+    border-bottom: 1px solid #ccc;
+    a {
+      display: block;
+      padding: .5em 1em .5em 2em;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 85%;
+      color: $heading-color;
+      font-weight: 700;
+      &.active {
+        background: #F7F7F7;
+        border-left: 3px solid $color-one;
+        padding-left: 1.8em;
+      }
+    }
+  }
+}

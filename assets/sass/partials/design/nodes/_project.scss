@@ -1,0 +1,58 @@
+.node-projects.view-mode-full {
+  .ds-one {
+    border-left: 5px solid $color-one;
+    padding-left: 1em;
+    margin-bottom: 2em;
+    h1 {
+      margin: 0;
+      @include heading-text;
+    }
+  }
+  .ds-three {
+    margin: 2em 0 0;
+  }
+  label {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $color-one;
+  }
+  .project-location {
+    text-transform: uppercase;
+    margin: 0 0 0.25em;
+    color: #B9B9B9;
+    font-weight: normal;
+    font-size: 1em;
+  }
+
+  .project-detail {
+    padding: 1em 0;
+    border-bottom: 1px solid #ccc;
+    p {
+      margin: 0;
+        & + p {
+          margin-top: -0.5em;
+        }
+    }
+  }
+  .project-detail.last {
+    border-bottom: 0;
+  }
+  .flex-direction-nav a.flex-next {
+    right: 30px;
+    opacity: 1;
+    @include hide-text;
+    background: url("../images/next.jpg") no-repeat;
+    &:before {
+      content: "";
+    }
+  }
+  .flex-direction-nav a.flex-prev {
+    opacity: 1;
+    @include hide-text;
+    background: url("../images/prev.jpg") no-repeat;
+    &:before {
+      content: "";
+    }
+
+  }
+}

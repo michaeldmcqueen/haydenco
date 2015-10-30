@@ -1,0 +1,52 @@
+.view-projects {
+  .views-row {
+    text-align: center;
+    &.views-row-odd {
+      @include breakpoint($desktop, $no-query: '.no-mq') {
+        @include grid-span(5.75,1);
+        clear: both;
+      }
+    }
+    &.views-row-even {
+      @include breakpoint($desktop, $no-query: '.no-mq') {
+        @include grid-span(5.75,7);
+      }
+    }
+    h3 {
+      margin-bottom: 0;
+      font-size: 1.4em;
+      @include heading-text;
+    }
+    h6 {
+      text-transform: uppercase;
+      font-weight: 300;
+      color: #000;
+      margin-top: .25em;
+    }
+  }
+  .node-projects.node-teaser {
+    margin-bottom: 2em;
+  }
+}
+.page-taxonomy-term {
+  .node-projects.node-teaser {
+    text-align: center;
+    margin-bottom: 2em;
+    @include breakpoint($desktop, $no-query: '.no-mq') {
+      display: inline-block;
+      width: 48%;
+      vertical-align: top;
+    }
+    h3 {
+      margin-bottom: 0;
+      font-size: 1.4em;
+      @include heading-text;
+    }
+    h6 {
+      text-transform: uppercase;
+      font-weight: 300;
+      color: #000;
+      margin-top: .25em;
+    }
+  }
+}

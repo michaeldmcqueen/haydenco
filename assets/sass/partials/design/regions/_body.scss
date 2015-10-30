@@ -1,0 +1,22 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $site-bg;
+  overflow-x: hidden;
+}
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1em;
+  position: relative;
+  @include clearfix;
+  @include breakpoint($tablet, $no-query: '.no-mq') {
+    padding: 0 2em;
+  }
+}

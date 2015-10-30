@@ -1,0 +1,11 @@
+.logo {
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  @include breakpoint($phone) {
+    float: left;
+    width: 50%;
+    max-width: 200px;
+  }
+}

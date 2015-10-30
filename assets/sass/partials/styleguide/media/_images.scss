@@ -1,0 +1,22 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.image-full_width.inserted-image {
+  width: 100% !important;
+  height: auto !important;
+  padding: 1em 0;
+}
+
+.image-half_width.inserted-image {
+  width: 100% !important;
+  height: auto !important;
+  padding: 1em 0;
+  @include breakpoint($tablet, $no-query: '.no_mq') {
+    width: 50% !important;
+    height: auto !important;
+    padding: 1em;
+
+  }
+}

@@ -1,0 +1,17 @@
+main {
+  @include clearfix;  
+}
+.not-front {
+  main {
+    padding-bottom: 2em;
+    padding-top: 1em;
+  }
+}
+
+.sidebar-second {
+  main#content {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      @include grid-span(8.25,1);
+    }
+  }
+}
