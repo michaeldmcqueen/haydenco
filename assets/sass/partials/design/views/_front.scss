@@ -1,3 +1,23 @@
+.front {
+  .preface {
+    margin-bottom: 0;
+  }
+  main {
+    background: url('../images/front-main.jpg') repeat;
+    padding: 2em 1em;
+    text-align: center;
+    h2 {
+      font-family: $heading-font-family;
+      font-weight: normal;
+      font-style: italic;
+      color: #4c4c4c;
+    }
+    .node-page {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+  }
+}
 .postscript {
   @include clearfix;
   padding: 2em 0;
