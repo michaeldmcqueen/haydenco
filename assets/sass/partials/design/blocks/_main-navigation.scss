@@ -50,9 +50,12 @@ nav {
         @include border-radius(3px);
         a {
           padding:0;
+          color: $color-one;
         }
         li {
-          padding: .5em 1.25em ;
+          padding: 0.5em .75em !important;
+          float: none !important;
+          display: block !important;
         }
       }
       li:hover {

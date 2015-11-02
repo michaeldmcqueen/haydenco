@@ -1,116 +1,63 @@
 .postscript {
   @include clearfix;
-  padding-top: 2em;
+  padding: 2em 0;
 }
-//About Block
-.about-us-front{
-  padding: 2em 2em 8em;
-  position: relative;
-  margin: 0 -1em;
-  overflow: hidden;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    padding: 2em;
-    margin: 0;
-    overflow: visible;
-  }
-  &:before {
-      content: '';
-      @include grad(rgba(255,255,255,1), rgba(255,255,255,0.5),90%);
-      width: 110%;
-      height: 350px;
-      position: absolute;
-      left: -2em;
-      top: 0;
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      background: url('../images/about-post.jpg') no-repeat center center; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      width: 110%;
-      height: 450px;
-      position: absolute;
-      left: -2em;
-      top: 0;
-      z-index: -2;
-    }
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    height: 450px;
-    padding: 2em 2em 2em 0;
-    @include grid-span(6,1);
-    &:before {
-      content: '';
-       @include grad(rgba(255,255,255,0.95), rgba(255,255,255,0),90%);
-      width: 200%;
-      height: 450px;
-      position: absolute;
-      left: -50%;
-      top: 0;
-      z-index: -1;
-    }
-    &:after {
-      content: '';
-      background: url('../images/about-post.jpg') no-repeat center center; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-      width: 200%;
-      height: 450px;
-      position: absolute;
-      left: -50%;
-      top: 0;
-      z-index: -2;
-    }
-  }
-}
-
-// Procedure Block
-#block-views-our-procedures-block-1 {
-  padding: 1em;
-  position: relative;
-  @include breakpoint($tablet, $no-query: '.no-mq') {
-    height: 450px;
-    padding: 2em 2em;
-    @include grid-span(6,7);
-    &:after {
-      content: '';
-      background: #fff;
-      width: 200%;
-      height: 450px;
-      position: absolute;
-      right: -100%;
-      top: 0;
-      z-index: -1;
-    }
-  }
+.projects-front  {
   .views-row {
-    padding: .5em 0;
-    border-top: 1px solid #979797;
-    @include breakpoint($lg-desktop, $no-query: '.no-mq') {
-      float: left;
-      width: 50%;
+    width: 44%;
+    display: inline-block;
+    margin: 1em .5em;
+    position: relative;
+    line-height: 0;
+    img {
+      width: 100%;
     }
-    h6 {
-      margin: 0;
-      font-weight: normal;
-      color: inherit;
-      a {
-        overflow: hidden;
-        display: block;
-        color: inherit;
-      }
-      &:before {
-        content: '';
-        background: url('../images/triangle.png') no-repeat;
-        width: 7px;
-        height: 7px;
-        float: left;
-        margin: 4px 1em 0 1em;
-      }
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      width: 22%;
+      margin: 1em .5em;
+    }
+    @include breakpoint($desktop, $no-query: '.no-mq') {
+      width: 18%;
+    }
+    &:hover h4 a:after {
+      content: 'See Project >';
+      display: block;
+      color: $color-one;
+      font-style: italic;
+      font-family: $heading-font-family;
+      text-transform: none;
+    }
+  }
+  h4 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: .9em;
+    z-index: 99;
+    margin: 0;
+    padding: 0em 0 1em ;
+    a {
+      color: #fff;
+      display: block;
+    }
+     &:before {
+      content: '';
+          /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&amp;0+0,0.85+100 */
+      background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0.85) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0)), color-stop(100%,rgba(0,0,0,0.85))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* IE10+ */
+      background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0.85) 100%); /* W3C */
+      position: absolute;
+      width: 100%;
+      left: 0;
+      height:100px;
+      bottom: 0;
+      z-index: -1;
     }
   }
 }

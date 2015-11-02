@@ -49,8 +49,10 @@
 
 <footer>
     <div class="wrap">
-      <h6>Jenkins and Morrow</h6>
-      <p>216 Fountain Ct., Suite 110, Lexington, KY 40509  •  859-264-1898</p>
-      <p>200 City Hill Dr, #102, London, KY 40741  •  606-877-8811</p>
+      <p><strong>The Hayden Company</strong><span>208 South Main Street</span><span>Nicholasville, KY 40356</span></br>
+      <span>P: 859-885-3388</span><span>F: 859-887-5741</span><span>E: info@haydenco.com</span></br>
+      Copyright © 2015 The Hayden Company. All Rights Reserved.</br>
+      <a href="http://www.trifectaky.com" target="_blank">Website: Trifecta!</a></p>
+      <img src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'hayden'); ?>/assets/images/us-green-seal.png" alt="Hayden">
     </div>
 </footer>

@@ -2,13 +2,30 @@ footer {
   background-color: $footer-bg;
   color: #fff;
   padding: 2em 0;
+  border-top: 7px solid #343838;
   @include clearfix;
-  h6 {
-    color: #fff;
-    margin: 0 0 .5em;
+  text-transform: uppercase;
+  font-size: .7em;
+  font-weight: 700;
+  strong {
+    color: $color-one;
+    padding-right: 1em;
+  }
+  span {
+    padding-right: 1em;
   }
   p {
     color: #fff;
     margin: 0;
+    float: left;
+    a {
+      color: #646c6c;
+      text-decoration: none;
+    }
+  }
+  img {
+    @include breakpoint($tablet, $no-query: '.no-mq') {
+      float: right;
+    }
   }
 }
